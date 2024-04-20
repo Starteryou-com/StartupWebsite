@@ -17,7 +17,7 @@ function Banner() {
             </div>
           </Col>
         </Row>
-        <Button className="btn rounded" variant="outline-primary">
+        <Button className="btn rounded" variant="outline-secondary">
           Learn More
         </Button>
       </Container>
