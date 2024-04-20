@@ -1,10 +1,13 @@
-import React from "react";
 import { Container, NavLink, Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 function Navibar() {
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
+      <Navbar
+        expand="lg"
+        className="bg-body-tertiary shadow-5-strong navibar"
+        fixed="top"
+      >
         <Container>
           <Navbar.Brand href="#home">Leadme</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
