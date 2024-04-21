@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 function About() {
-  return <div>About Us</div>;
+  return (
+    <Container id="aboutUs">
+      <div>about us</div>
+    </Container>
+  );
 }
 
 export default About;

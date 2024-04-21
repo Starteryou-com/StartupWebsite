@@ -1,5 +1,11 @@
+import { Container } from "react-bootstrap";
+
 function Features() {
-  return <div>Features</div>;
+  return (
+    <Container id="features">
+      <div>Features</div>
+    </Container>
+  );
 }
 
 export default Features;

@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 function Team() {
   return (
     <Container>
-      <div className="team">
+      <div className="team" id="team">
         <h1>Meet Our Team</h1>
         <Row>
           {members.map((d) => (
