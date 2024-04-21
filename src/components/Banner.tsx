@@ -4,7 +4,7 @@ import prsn from "../assets/prsn.png";
 
 function Banner() {
   return (
-    <section className="banner">
+    <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7} className="bannerText">

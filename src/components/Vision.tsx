@@ -3,7 +3,7 @@ import visionImg from "../assets/visionImg.png";
 
 function Vision() {
   return (
-    <Container className="Vision rounded">
+    <Container className="Vision rounded" id="vision">
       <Row>
         <Col xs={12} md={6} xl={7}>
           <h1>Our Vision</h1>
