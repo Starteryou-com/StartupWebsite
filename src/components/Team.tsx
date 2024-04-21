@@ -4,19 +4,23 @@ import Card from "react-bootstrap/Card";
 
 function Team() {
   return (
-    <Container className="team">
-      {members.map((d) => (
-        <div>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>{d.name}</Card.Title>
-              <Card.Text>{d.about}</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </div>
-      ))}
+    <Container>
+      <div className="team">
+        <h1>Meet Our Team</h1>
+        <Row>
+          {members.map((d) => (
+            <Col className="d-flex justify-content-center">
+              <Card style={{ width: "18rem" }} className="card rounded">
+                <Card.Img variant="top" src={rohithImg} />
+                <Card.Body>
+                  <Card.Title>{d.name}</Card.Title>
+                  <Card.Text>{d.about}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </div>
     </Container>
   );
 }
@@ -24,15 +28,38 @@ function Team() {
 const members = [
   {
     name: "Venkata Sai Rohith",
-    about: "hello guys how are you",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
   },
   {
     name: "Anjali singh",
-    about: "hi ppl how are you",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
   },
   {
     name: "Bharadwaj",
-    about: "hey guys how are you",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+  },
+  {
+    name: "Venkata Sai Rohith",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+  },
+  {
+    name: "Venkata Sai Rohith",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+  },
+  {
+    name: "Venkata Sai Rohith",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+  },
+  {
+    name: "Venkata Sai Rohith",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
   },
 ];
 

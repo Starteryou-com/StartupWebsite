@@ -52,10 +52,14 @@
 }
 
 .team {
-  padding-top: 20px;
+  margin: 5px 0 5px 0;
 }
 
 .contact {
   background-color: #1d0053;
   color: #ffffff;
+}
+
+.card {
+  margin: 5px 0 5px 0;
 }
