@@ -1,7 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { members } from "./TeamsInfo";
-import instagram from "../assets/team/insta.jpg";
 
 function Team() {
   return (
