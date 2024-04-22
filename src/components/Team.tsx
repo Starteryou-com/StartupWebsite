@@ -1,6 +1,7 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
-import rohithImg from "../assets/team/rohith.jpg";
+import { Col, Container, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import { members } from "./TeamsInfo";
+import instagram from "../assets/team/insta.jpg";
 
 function Team() {
   return (
@@ -10,12 +11,25 @@ function Team() {
         <Row>
           {members.map((d) => (
             <Col className="d-flex justify-content-center">
-              <Card style={{ width: "18rem" }} className="card rounded">
-                <Card.Img variant="top" src={rohithImg} />
+              <Card
+                style={{ width: "18rem", alignItems: "center" }}
+                className="card rounded"
+              >
+                <Card.Img
+                  variant="top"
+                  src={d.path}
+                  className="rounded-circle"
+                  style={{ width: 150, marginTop: 10 }}
+                />
                 <Card.Body>
                   <Card.Title>{d.name}</Card.Title>
                   <Card.Text>{d.about}</Card.Text>
                 </Card.Body>
+                <Card.Footer className="d-flex justify-content-left">
+                  <a href={d.insta}>
+                    <img src={instagram} style={{ width: 30 }} />
+                  </a>
+                </Card.Footer>
               </Card>
             </Col>
           ))}
@@ -24,43 +38,5 @@ function Team() {
     </Container>
   );
 }
-
-const members = [
-  {
-    name: "Venkata Sai Rohith",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-  },
-  {
-    name: "Anjali singh",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-  },
-  {
-    name: "Bharadwaj",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-  },
-  {
-    name: "Venkata Sai Rohith",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-  },
-  {
-    name: "Venkata Sai Rohith",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-  },
-  {
-    name: "Venkata Sai Rohith",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-  },
-  {
-    name: "Venkata Sai Rohith",
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
-  },
-];
 
 export default Team;
