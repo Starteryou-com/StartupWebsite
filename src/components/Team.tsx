@@ -20,15 +20,20 @@ function Team() {
                   src={d.path}
                   className="rounded-circle"
                   style={{ width: 150, marginTop: 10 }}
+                  alt="No image avaliable"
                 />
                 <Card.Body>
                   <Card.Title>{d.name}</Card.Title>
                   <Card.Text>{d.about}</Card.Text>
                 </Card.Body>
-                <Card.Footer className="d-flex justify-content-left">
-                  <a href={d.insta}>
-                    <img src={instagram} style={{ width: 30 }} />
-                  </a>
+                <Card.Footer>
+                  <div>
+                    {d.links.map((l) => (
+                      <a href={l.link}>
+                        <img src={l.icon} style={{ width: 30 }} />
+                      </a>
+                    ))}
+                  </div>
                 </Card.Footer>
               </Card>
             </Col>
