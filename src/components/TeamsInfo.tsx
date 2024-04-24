@@ -52,4 +52,24 @@ export const members = [
       },
     ],
   },
+  {
+    name: "#Your name",
+    path: rohithimg, // Send image technical team for uploading
+    about: "Type your description",
+    links: [
+      {
+        link: "your scocial media link",
+        icon: instaicon, // leave this icon for technical team
+      },
+      {
+        link: "your social media link 2",
+        icon: mailicon, // leave this icon for technical team
+      },
+      {
+        link: "your social media link 3",
+        icon: linkedinicon, // leave this icon for technical team
+      }, // Add new link if you have any more profiles
+      
+    ],
+  },
 ];
