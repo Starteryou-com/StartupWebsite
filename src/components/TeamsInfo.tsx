@@ -40,7 +40,7 @@ export const members = [
   },
   {
     name: "bhardwaj",
-    about: "Lorem ipsum dolor skdl[qit amet,  etur adipiscing elit, s",
+    about: "Lorem ipsum dolor skdl[qit amet,  etur elit, s",
     links: [
       {
         link: "https://www.instagram.com/",
