@@ -8,7 +8,7 @@ export const members = [
   {
     name: "Venkata Sai Rohith",
     path: rohithimg,
-    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, s",
+    about: "Lorem ipsum dolor sit amet, consectetu adipiscing elit, s",
     links: [
       {
         link: "https://www.instagram.com/",
@@ -69,7 +69,6 @@ export const members = [
         link: "your social media link 3",
         icon: linkedinicon, // leave this icon for technical team
       }, // Add new link if you have any more profiles
-      
     ],
   },
 ];
