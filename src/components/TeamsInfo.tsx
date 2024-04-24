@@ -8,7 +8,7 @@ export const members = [
   {
     name: "Venkata Sai Rohith",
     path: rohithimg,
-    about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, s",
+    about: "Lorem ipsum dolor sit amet, consectetu adipiscing elit, s",
     links: [
       {
         link: "https://www.instagram.com/",
@@ -30,8 +30,7 @@ export const members = [
   },
   {
     name: "Anjali singh",
-    about:
-      "Lorem ipsum dolor sit amet, consectllllllllllllllllllllllllllll etur adipiscing elit, s",
+    about: "Lorem ipsum dolor sit amet, etur adipiscing elit, s",
     links: [
       {
         link: "https://www.instagram.com/",
@@ -41,8 +40,7 @@ export const members = [
   },
   {
     name: "bhardwaj",
-    about:
-      "Lorem ipsum dolor skdl[qit amet, consectllllllllllllllllllllllllllll etur adipiscing elit, s",
+    about: "Lorem ipsum dolor skdl[qit amet,  etur elit, s",
     links: [
       {
         link: "https://www.instagram.com/",
@@ -71,7 +69,6 @@ export const members = [
         link: "your social media link 3",
         icon: linkedinicon, // leave this icon for technical team
       }, // Add new link if you have any more profiles
-      
     ],
   },
 ];
