@@ -29,7 +29,7 @@ export const members = [
     ],
   },
   {
-    name: "Anjali singh",
+    name: "Anjali Singh",
     about: "Lorem ipsum dolor sit amet, etur adipiscing elit, s",
     links: [
       {
@@ -39,8 +39,8 @@ export const members = [
     ],
   },
   {
-    name: "bhardwaj",
-    about: "Lorem ipsum dolor skdl[qit amet,  etur elit, s",
+    name: "Bhardwaj",
+    about: "Lorem ipsum dolor skdl[qit amet, etur elit, s",
     links: [
       {
         link: "https://www.instagram.com/",
@@ -58,35 +58,36 @@ export const members = [
     about: "Type your description",
     links: [
       {
-        link: "your scocial media link",
-        icon: instaicon, // leave this icon for technical team
+        link: "your social media link",
+        icon: instaicon, // leave this icon for the technical team
       },
       {
         link: "your social media link 2",
-        icon: mailicon, // leave this icon for technical team
+        icon: mailicon, // leave this icon for the technical team
       },
       {
         link: "your social media link 3",
-        icon: linkedinicon, // leave this icon for technical team
+        icon: linkedinicon, // leave this icon for the technical team
       }, // Add new link if you have any more profiles
     ],
   },
-  name: "Michael Berlingo",
-path: michaelBerlingo,
-about: "Founder & CEO | Passionate Entrepreneur | Management Graduate from Sacred Heart University",
-links: [
-{
-link: "https://www.instagram.com/name_is_niku/",
-icon: instaicon,
-},
-{
-link: "mvberlingo@gmail.com",
-icon: mailicon,
-},
-{
-link: "https://www.linkedin.com/in/mblingo/",
-icon: linkedinicon,
-}
-],
-},
+  {
+    name: "Michael Berlingo",
+    path: michaelBerlingo, // Assuming you have defined michaelBerlingo image path somewhere
+    about: "Founder & CEO | Passionate Entrepreneur | Management Graduate from Sacred Heart University",
+    links: [
+      {
+        link: "https://www.instagram.com/name_is_niku/",
+        icon: instaicon,
+      },
+      {
+        link: "mvberlingo@gmail.com",
+        icon: mailicon,
+      },
+      {
+        link: "https://www.linkedin.com/in/mblingo/",
+        icon: linkedinicon,
+      },
+    ],
+  },
 ];
