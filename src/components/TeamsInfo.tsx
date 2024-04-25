@@ -78,10 +78,6 @@ export const members = [
     about: "Founder & CEO | Passionate Entrepreneur | Management Graduate from Sacred Heart University",
     links: [
       {
-        link: "https://www.instagram.com/name_is_niku/",
-        icon: instaicon,
-      },
-      {
         link: "mvberlingo@gmail.com",
         icon: mailicon,
       },
