@@ -71,4 +71,22 @@ export const members = [
       }, // Add new link if you have any more profiles
     ],
   },
+  name: "Michael Berlingo",
+path: michaelBerlingo,
+about: "Founder & CEO | Passionate Entrepreneur | Management Graduate from Sacred Heart University",
+links: [
+{
+link: "https://www.instagram.com/name_is_niku/",
+icon: instaicon,
+},
+{
+link: "mvberlingo@gmail.com",
+icon: mailicon,
+},
+{
+link: "https://www.linkedin.com/in/mblingo/",
+icon: linkedinicon,
+}
+],
+},
 ];
