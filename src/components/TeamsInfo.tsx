@@ -1,5 +1,5 @@
 import rohithimg from "../assets/team/rohith.jpg";
-import michaelberlingoimg from "";
+import michaelberlingoimg from "./assets/team/michael.jpg";
 import instaicon from "../assets/team/insta.jpg";
 import mailicon from "../assets/team/mailicon.png";
 import linkedinicon from "../assets/team/linkedinicon.jpg";
