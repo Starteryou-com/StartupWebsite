@@ -33,5 +33,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
-      - name: permissions
-        id-token: write
