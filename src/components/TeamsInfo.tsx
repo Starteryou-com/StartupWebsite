@@ -1,4 +1,5 @@
 import rohithimg from "../assets/team/rohith.jpg";
+import michaelberlingoimg from "";
 import instaicon from "../assets/team/insta.jpg";
 import mailicon from "../assets/team/mailicon.png";
 import linkedinicon from "../assets/team/linkedinicon.jpg";
@@ -73,7 +74,7 @@ export const members = [
   },
   {
     name: "Michael Berlingo",
-    path: michaelBerlingo, // Assuming you have defined michaelBerlingo image path somewhere
+    path: michaelberlingoimg, // Assuming you have defined michaelBerlingo image path somewhere
     about: "Founder & CEO | Passionate Entrepreneur | Management Graduate from Sacred Heart University",
     links: [
       {
