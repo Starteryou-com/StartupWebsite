@@ -4,7 +4,7 @@ import prsn from "../assets/prsn.png";
 
 function Banner() {
   return (
-    <section className="banner align-items-center" id="home">
+    <section className="banner d-flex align-items-center" id="home">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7} className="bannerText">
@@ -17,10 +17,11 @@ function Banner() {
             </div>
           </Col>
         </Row>
-
-        <Button className="btn rounded " variant="outline-secondary">
-          Learn More
-        </Button>
+        <div className="col align-self-center">
+          <Button className="btn rounded" variant="outline-secondary">
+            Learn More
+          </Button>
+        </div>
       </Container>
     </section>
   );

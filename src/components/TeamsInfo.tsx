@@ -3,6 +3,7 @@ import mailicon from "../assets/team/mailicon.png";
 import linkedinicon from "../assets/team/linkedinicon.jpg";
 import githubicon from "../assets/team/githubicon.jpg";
 import altimg from "../assets/team/altimg.jpg";
+import antonyimg from "../assets/team/antony.jpg";
 
 import rohithimg from "../assets/team/rohith.jpg";
 import michaelberlingoimg from "../assets/team/michael.jpg";
@@ -27,7 +28,7 @@ export const members = [
   },
   {
     name: "Anthony Ivanov",
-    path: altimg,
+    path: antonyimg,
     about: "CFO | Experienced Young Entrepreneur",
     links: [
       {

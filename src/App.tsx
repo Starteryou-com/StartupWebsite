@@ -7,6 +7,7 @@ import Vision from "./components/Vision";
 import Team from "./components/Team";
 import Features from "./components/Features";
 import Mission from "./components/Mission";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Vision />
       <Team />
       <Contact />
+      <Footer />
     </div>
   );
 }
