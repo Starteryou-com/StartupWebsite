@@ -1,21 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
 #root {
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  background-color: #848482;
-  font-family: "Ubuntu", sans-serif;
+
+  background-color: #f6f6f6;
+  font-family: Helvetica;
   font-weight: 400;
   font-style: normal;
-  color: #ffffff;
+  color: #000000;
 }
 
-.navibar {
-  background-color: #ffffff70;
+/*------Main App.tsx component--------*/
+
+.App > * {
+  margin: 20px 0 20px 0;
 }
+
+/*------Navigation bar--------*/
+
+.navibar {
+  background-color: #ffffff;
+}
+
+/*------Banner component--------*/
 
 .banner {
   margin-top: 0;
@@ -29,18 +36,26 @@
 }
 
 .prsn {
+  /*------Banner image adjustemnt--------*/
   margin-top: 7%;
   margin-left: 10px;
 }
 .prsn img {
-  height: 110%;
-  width: 110%;
+  width: 100%;
 }
 
+/*------Mission component--------*/
+
+.Mission {
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.133);
+  background-color: #ffffff;
+}
+
+/*------Vision component--------*/
+
 .Vision {
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.501);
-  background-color: #f2f2f2;
-  color: #02050f;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.133);
+  background-color: #ffffff;
 }
 .Vision h1 {
   margin-top: 100px;
@@ -48,12 +63,17 @@
 
 .Vision img {
   padding: 10% 0 10% 0;
+  width: 100%;
   border-radius: 50% 20% / 10% 40%;
 }
+
+/*------Team component--------*/
 
 .team {
   margin: 5px 10px 0px 10px;
 }
+
+/*------Contact component--------*/
 
 .contact {
   background-color: #323135;
