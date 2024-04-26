@@ -6,18 +6,20 @@ import Navibar from "./components/Navibar";
 import Vision from "./components/Vision";
 import Team from "./components/Team";
 import Features from "./components/Features";
+import Mission from "./components/Mission";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Navibar />
       <Banner />
       <Features />
       <About />
+      <Mission />
       <Vision />
       <Team />
       <Contact />
-    </>
+    </div>
   );
 }
 
