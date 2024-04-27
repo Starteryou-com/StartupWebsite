@@ -2,7 +2,7 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
 function Contact() {
   return (
-    <section className="contact" id="contact">
+    <section className="contact mt-2" id="contact">
       <Container>
         <Row>
           <Col xs={12} md={6} xl={7} className="contactinfo">
