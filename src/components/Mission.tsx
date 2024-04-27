@@ -5,10 +5,14 @@ function Mission() {
     <div className="mission rounded mt-2">
       <Container>
         <Row>
-          <Col className="d-flex align-items-center m-5">
+          <Col
+            className="d-flex align-items-center md-auto message-title"
+            xs={12}
+            md={3}
+          >
             <h1>Our Mission</h1>
           </Col>
-          <Col className="m-5">
+          <Col className="mission-message" xs={12} md={8}>
             <a>
               At Leadme, our mission is to empower the aspirations of students
               by providing a dynamic and inclusive platform for discovering

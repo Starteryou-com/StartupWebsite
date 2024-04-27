@@ -39,7 +39,7 @@ function Contact() {
                   />
                 </Col>
               </Row>
-              <Button>Submit</Button>
+              <Button variant="dark">Submit</Button>
             </Container>
           </Col>
         </Row>

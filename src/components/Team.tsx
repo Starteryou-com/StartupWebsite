@@ -25,6 +25,7 @@ function Team() {
                   <Card.Title>{d.name}</Card.Title>
                   <Card.Text>{d.about}</Card.Text>
                 </Card.Body>
+
                 <Card.Footer>
                   <div>
                     {d.links.map((l) => (
