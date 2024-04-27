@@ -13,9 +13,9 @@ function Navibar() {
               <NavLink href="#features">Features</NavLink>
               <NavDropdown title="Know More" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#aboutUs">About Us</NavDropdown.Item>
+                <NavDropdown.Item href="#mission">Our Mission</NavDropdown.Item>
                 <NavDropdown.Item href="#vision">Our Vision</NavDropdown.Item>
                 <NavDropdown.Item href="#team">Our Team</NavDropdown.Item>
-                <NavDropdown.Item href="#team">Rate Us</NavDropdown.Item>
               </NavDropdown>
               <NavLink href="#contact">Contact us</NavLink>
             </Nav>

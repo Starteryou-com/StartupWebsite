@@ -5,11 +5,11 @@ import { members } from "./TeamsInfo";
 function Team() {
   return (
     <Container>
-      <div className="team" id="team">
-        <h1>Meet Our Team</h1>
+      <div className="team mt-5" id="team">
+        <h1 style={{ textAlign: "center" }}>Meet Our Team</h1>
         <Row>
           {members.map((d) => (
-            <Col className="d-flex justify-content-center">
+            <Col className="d-flex justify-content-center mt-1">
               <Card
                 style={{ width: "18rem", alignItems: "center" }}
                 className="card rounded"
