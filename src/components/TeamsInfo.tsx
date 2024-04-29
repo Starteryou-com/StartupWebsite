@@ -8,6 +8,9 @@ import antonyimg from "../assets/team/antony.jpg";
 import rohithimg from "../assets/team/rohith.jpg";
 import michaelberlingoimg from "../assets/team/michael.jpg";
 import nikshipimg from "../assets/team/nikshepimg.jpeg";
+import anjaliimg from "../assets/team/anjali.jpg";
+import ujwalimg from "../assets/team/ujwalgeed.jpg";
+import rushiimg from "../assets/team/rushi.jpeg";
 
 export const members = [
   {
@@ -65,7 +68,70 @@ export const members = [
       },
     ],
   },
+  {
+    name: "Ujwal Geed",
+    path: ujwalimg,
+    about:
+      "Sales Officer | Grad Business Analytics Student @ Sacred Heart University",
+    links: [
+      {
+        link: "https://www.instagram.com/ujwalgeed/",
+        icon: instaicon,
+      },
+      {
+        link: "mailto:Ujjwalgeed@gmail.com",
+        icon: mailicon,
+      },
+      {
+        link: "https://www.linkedin.com/in/ujwal-geed-8a0063218/",
+        icon: linkedinicon,
+      },
+    ],
+  },
 
+  {
+    name: "Rushikesh Balkrushna Solanke",
+    path: rushiimg,
+    about:
+      "Marketing Manager | Computer Science Grad at Sacred Heart University",
+    links: [
+      {
+        link: "https://www.instagram.com/rushi.solanke57/",
+        icon: instaicon,
+      },
+      {
+        link: "mailto:rishisolanke57@gmail.com",
+        icon: mailicon,
+      },
+      {
+        link: "https://www.linkedin.com/in/rushikesh-balkrushna-solanke-99546b163/",
+        icon: linkedinicon,
+      },
+    ],
+  },
+
+  {
+    name: "#Your name",
+    path: altimg, // Send image technical team for uploading
+    about: "Type your description",
+    links: [
+      {
+        link: "your social media link",
+        icon: instaicon, // leave this icon for the technical team
+      },
+      {
+        link: "your social media link 2",
+        icon: mailicon, // leave this icon for the technical team
+      },
+      {
+        link: "your social media link 3",
+        icon: linkedinicon, // leave this icon for the technical team
+      }, // Add new link if you have any more profiles
+    ],
+  },
+];
+
+export const techteam = [
   {
     name: "Venkata Sai Rohith",
     path: rohithimg,
@@ -89,24 +155,20 @@ export const members = [
       },
     ],
   },
-
   {
-    name: "#Your name",
-    path: altimg, // Send image technical team for uploading
-    about: "Type your description",
+    name: "Anjali Singh",
+    path: anjaliimg,
+    about:
+      "Full stack developer | master Student in computer science and information technology-data science in sacred heart University.",
     links: [
       {
-        link: "your social media link",
-        icon: instaicon, // leave this icon for the technical team
+        link: "mailto:anjalisingh03200@gmail.com",
+        icon: mailicon,
       },
       {
-        link: "your social media link 2",
-        icon: mailicon, // leave this icon for the technical team
+        link: "https://www.linkedin.com/in/anjali-singh-365121238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        icon: linkedinicon,
       },
-      {
-        link: "your social media link 3",
-        icon: linkedinicon, // leave this icon for the technical team
-      }, // Add new link if you have any more profiles
     ],
   },
 ];
