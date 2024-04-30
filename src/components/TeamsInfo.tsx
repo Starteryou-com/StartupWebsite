@@ -4,6 +4,7 @@ import linkedinicon from "../assets/team/linkedinicon.jpg";
 import githubicon from "../assets/team/githubicon.jpg";
 import altimg from "../assets/team/altimg.jpg";
 import antonyimg from "../assets/team/antony.jpg";
+import webicon from "../assets/team/webicon.jpg";
 
 import rohithimg from "../assets/team/rohith.jpg";
 import michaelberlingoimg from "../assets/team/michael.jpg";
@@ -11,6 +12,8 @@ import nikshipimg from "../assets/team/nikshepimg.jpeg";
 import anjaliimg from "../assets/team/anjali.jpg";
 import ujwalimg from "../assets/team/ujwalgeed.jpg";
 import rushiimg from "../assets/team/rushi.jpeg";
+import bharadwajimg from "../assets/team/bharadwaj.jpg";
+import raviimg from "../assets/team/ravikumar.jpg";
 
 export const members = [
   {
@@ -109,29 +112,24 @@ export const members = [
       },
     ],
   },
-
-  {
-    name: "#Your name",
-    path: altimg, // Send image technical team for uploading
-    about: "Type your description",
-    links: [
-      {
-        link: "your social media link",
-        icon: instaicon, // leave this icon for the technical team
-      },
-      {
-        link: "your social media link 2",
-        icon: mailicon, // leave this icon for the technical team
-      },
-      {
-        link: "your social media link 3",
-        icon: linkedinicon, // leave this icon for the technical team
-      }, // Add new link if you have any more profiles
-    ],
-  },
 ];
 
 export const techteam = [
+  {
+    name: "Rohith Kumar",
+    path: raviimg,
+    about: "Data scientist | Web design 👨‍💻| Data Analyst",
+    links: [
+      {
+        link: "https://portfolio-pi-green-29.vercel.app/#",
+        icon: webicon,
+      },
+      {
+        link: "mailto:bpscrohit@gmail.com",
+        icon: mailicon,
+      },
+    ],
+  },
   {
     name: "Venkata Sai Rohith",
     path: rohithimg,
@@ -168,6 +166,29 @@ export const techteam = [
       {
         link: "https://www.linkedin.com/in/anjali-singh-365121238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         icon: linkedinicon,
+      },
+    ],
+  },
+  {
+    name: "Sai Sri Sheetal Bharadwaj Chandarlapati",
+    path: bharadwajimg,
+    about: "Data Scientist | Expert in Deep Learning | Skilled Communicator",
+    links: [
+      {
+        link: "https://www.instagram.com/",
+        icon: instaicon,
+      },
+      {
+        link: "mailto:andanala.rohith357@gmail.com",
+        icon: mailicon,
+      },
+      {
+        link: "https://www.linkedin.com/in/rohithandanala357/",
+        icon: linkedinicon,
+      },
+      {
+        link: "https://github.com/rohithandanala",
+        icon: githubicon,
       },
     ],
   },
