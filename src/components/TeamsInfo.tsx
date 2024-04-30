@@ -2,7 +2,6 @@ import instaicon from "../assets/team/insta.jpg";
 import mailicon from "../assets/team/mailicon.png";
 import linkedinicon from "../assets/team/linkedinicon.jpg";
 import githubicon from "../assets/team/githubicon.jpg";
-import altimg from "../assets/team/altimg.jpg";
 import antonyimg from "../assets/team/antony.jpg";
 import webicon from "../assets/team/webicon.jpg";
 
