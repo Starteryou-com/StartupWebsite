@@ -5,7 +5,7 @@ function Navibar() {
     <div>
       <Navbar expand="lg" className=" shadow-5-strong navibar" fixed="top">
         <Container>
-          <Navbar.Brand href="#home">Leadme</Navbar.Brand>
+          <Navbar.Brand href="#home">Starteryou</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

@@ -8,7 +8,7 @@ function Contact() {
           <Col xs={12} md={6} xl={7} className="contactinfo">
             <h2>GET IN TOUCH</h2>
             <a>
-              please fill out the form below to send us an email and we will get
+              Please fill out the form below to send us an email and we will get
               back to you as soon as possible.
             </a>
           </Col>
