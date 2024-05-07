@@ -8,7 +8,7 @@ function Banner() {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7} className="bannerText">
-            <h1>LeadMe.</h1>
+            <h1>Starteryou.</h1>
             <h3>Don’t Just Follow the crowd,Lead it.</h3>
           </Col>
           <Col xs={12} md={6} xl={5} className="prsnImage">

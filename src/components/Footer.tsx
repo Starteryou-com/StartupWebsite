@@ -7,7 +7,7 @@ function Footer() {
         <hr></hr>
         <Row>
           <Col>
-            <h1>LeadMe</h1>
+            <h1>Starteryou</h1>
           </Col>
           <Col>
             <ul style={{ listStyle: "none" }}>
