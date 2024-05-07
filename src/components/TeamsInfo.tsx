@@ -14,12 +14,16 @@ import rushiimg from "../assets/team/rushi.jpeg";
 import bharadwajimg from "../assets/team/bharadwaj.jpg";
 import raviimg from "../assets/team/ravikumar.jpg";
 
-export const members = [
+export const primeMembers = [
   {
     name: "Michael Berlingo",
     path: michaelberlingoimg, // Assuming you have defined michaelBerlingo image path somewhere
-    about:
-      "Founder & CEO | Passionate Entrepreneur | Management Graduate from Sacred Heart University",
+    about: (
+      <p>
+        <strong>Founder & CEO</strong>| Passionate Entrepreneur | Management
+        Graduate from Sacred Heart University
+      </p>
+    ),
     links: [
       {
         link: "mailto:mvberlingo@gmail.com",
@@ -34,14 +38,18 @@ export const members = [
   {
     name: "Anthony Ivanov",
     path: antonyimg,
-    about: "CFO | Experienced Young Entrepreneur",
+    about: (
+      <p>
+        <strong>CFO</strong> | Experienced Young Entrepreneur
+      </p>
+    ),
     links: [
       {
         link: "mailto:anthonyivanov00@gmail.com",
         icon: mailicon,
       },
       {
-        link: "www.linkedin.com/in/anthony-ivanov",
+        link: "https://www.linkedin.com/in/anthony-ivanov/",
         icon: linkedinicon,
       },
     ],
@@ -49,8 +57,13 @@ export const members = [
   {
     name: "Nikshep A Kulli",
     path: nikshipimg,
-    about:
-      "CTO|Data Educator | Nurturing Minds in Data Structures, Text Analysis, MongoDB, and Data Science Architecture 🚀💻 | Passionate about Empowering Future Tech Leaders",
+    about: (
+      <p>
+        <strong>CTO</strong> |Data Educator | Nurturing Minds in Data
+        Structures, Text Analysis, MongoDB, and Data Science Architecture |
+        Passionate about Empowering Future Tech Leaders
+      </p>
+    ),
     links: [
       {
         link: "https://www.instagram.com/name_is_niku/",
@@ -70,11 +83,18 @@ export const members = [
       },
     ],
   },
+];
+
+export const secondaryMembers = [
   {
     name: "Ujwal Geed",
     path: ujwalimg,
-    about:
-      "Sales Officer | Grad Business Analytics Student @ Sacred Heart University",
+    about: (
+      <p>
+        <strong>Sales Officer</strong> | Grad Business Analytics Student @
+        Sacred Heart University
+      </p>
+    ),
     links: [
       {
         link: "https://www.instagram.com/ujwalgeed/",
@@ -94,8 +114,12 @@ export const members = [
   {
     name: "Rushikesh Balkrushna Solanke",
     path: rushiimg,
-    about:
-      "Marketing Manager | Computer Science Grad at Sacred Heart University",
+    about: (
+      <p>
+        <strong>Marketing Manager</strong> | Computer Science Grad at Sacred
+        Heart University
+      </p>
+    ),
     links: [
       {
         link: "https://www.instagram.com/rushi.solanke57/",
@@ -117,7 +141,11 @@ export const techteam = [
   {
     name: "Rohith Kumar",
     path: raviimg,
-    about: "Data scientist | Web design 👨‍💻| Data Analyst",
+    about: (
+      <p>
+        <strong>Data scientist</strong> | Web design | Data Analyst
+      </p>
+    ),
     links: [
       {
         link: "https://portfolio-pi-green-29.vercel.app/#",
@@ -132,7 +160,12 @@ export const techteam = [
   {
     name: "Venkata Sai Rohith",
     path: rohithimg,
-    about: "Data Scientist | Expert in Deep Learning | Skilled Communicator",
+    about: (
+      <p>
+        <strong>Data Scientist</strong> | Expert in Deep Learning | Skilled
+        Communicator
+      </p>
+    ),
     links: [
       {
         link: "https://www.instagram.com/",
@@ -155,8 +188,13 @@ export const techteam = [
   {
     name: "Anjali Singh",
     path: anjaliimg,
-    about:
-      "Full stack developer | master Student in computer science and information technology-data science in sacred heart University.",
+    about: (
+      <p>
+        <strong>Full stack developer</strong> | master Student in computer
+        science and information technology-data science in sacred heart
+        University.
+      </p>
+    ),
     links: [
       {
         link: "mailto:anjalisingh03200@gmail.com",
@@ -171,7 +209,12 @@ export const techteam = [
   {
     name: "Sai Sri Sheetal Bharadwaj Chandarlapati",
     path: bharadwajimg,
-    about: "Data Scientist | Expert in Deep Learning | Skilled Communicator",
+    about: (
+      <p>
+        <strong>Data Scientist</strong> | Expert in Deep Learning | Skilled
+        Communicator
+      </p>
+    ),
     links: [
       {
         link: "https://www.instagram.com/",
