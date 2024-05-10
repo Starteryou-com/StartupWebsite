@@ -66,6 +66,10 @@ export const primeMembers = [
     ),
     links: [
       {
+        link: "https://nikshepkulli.com/",
+        icon: webicon,
+      },
+      {
         link: "https://www.instagram.com/name_is_niku/",
         icon: instaicon,
       },
