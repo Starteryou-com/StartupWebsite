@@ -1,6 +1,6 @@
 {
-  "name": "leadme",
-  "homepage": "https://www.starteryou.com/",
+  "name": "starteryou",
+  
   "private": true,
   "version": "0.0.0",
   "type": "module",
