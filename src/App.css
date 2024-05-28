@@ -3,17 +3,16 @@
   margin: 0 auto;
   padding: 0;
 
-  background-color: #f6f6f6;
-  font-family: Helvetica;
+  background-color: #ededed;
+  font-family: Open Sans;
   font-weight: 400;
-  font-style: normal;
-  color: #000000;
+  font-style: normal;;
 }
 
 /*------Navigation bar--------*/
 
 .navibar {
-  background-color: #ffffff;
+  background-color: #ededed;
 }
 
 /*------Banner component--------*/
@@ -123,4 +122,21 @@
 .footer a {
   color: inherit;
   text-decoration: none;
+}
+
+.nav-starteryou {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+.nav-everything {
+    color: #e8095e;
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    line-height: 26px;
+    text-align: center;
 }
