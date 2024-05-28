@@ -4,13 +4,9 @@
   padding: 0;
 
   background-color: #ededed;
-<<<<<<< Updated upstream
-  font-family: Open Sans;
-=======
   font-family: Helvetica;
->>>>>>> Stashed changes
   font-weight: 400;
-  font-style: normal;;
+  font-style: normal;
 }
 
 /*------Navigation bar--------*/
@@ -129,18 +125,18 @@
 }
 
 .nav-starteryou {
-    color: #000000;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 42px;
+  color: #000000;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
 }
 
 .nav-everything {
-    color: #e8095e;
-    font-size: 20px;
-    font-family: "Poppins";
-    font-weight: 600;
-    letter-spacing: -0.1px;
-    line-height: 26px;
-    text-align: center;
+  color: #e8095e;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  line-height: 26px;
+  text-align: center;
 }
