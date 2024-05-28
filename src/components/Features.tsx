@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 function Features() {
   return (
     <Container id="features" className="mt-2">
-      <div>Features xxxxxxxxxxxxxxxxxxxxxxxxx</div>
+      <div>Features</div>
     </Container>
   );
 }
