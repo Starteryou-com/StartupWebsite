@@ -2,7 +2,7 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
 function Contact() {
   return (
-    <section className="contact mt-2" id="contact">
+    <section className="contact" id="contact">
       <Container>
         <Row>
           <Col xs={12} md={6} xl={7} className="contactinfo">
@@ -29,9 +29,14 @@ function Contact() {
                     placeholder="Last name"
                   ></input>
                 </Col>
-              </Row>
-              <Row>
-                <Col>
+                <Col xs={12} md={12} xl={12}>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Your email address"
+                  ></input>
+                </Col>
+                <Col xs={12} md={12} xl={12}>
                   <Form.Control
                     as="textarea"
                     rows={6}

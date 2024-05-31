@@ -2,8 +2,10 @@ import { Container } from "react-bootstrap";
 
 function Features() {
   return (
-    <Container id="features" className="mt-2">
-      <div>Features</div>
+    <Container id="features" className="features">
+      <div>
+        <h1>Features</h1>
+      </div>
     </Container>
   );
 }
