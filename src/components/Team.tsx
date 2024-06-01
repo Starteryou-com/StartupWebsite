@@ -7,7 +7,7 @@ import { secondaryMembers } from "./TeamsInfo";
 function Team() {
   return (
     <Container>
-      <div className="team mt-5" id="team">
+      <div className="team" id="team">
         <h1 style={{ textAlign: "center" }}>Meet Our Team</h1>
         <Row>
           {primeMembers.map((d) => (
@@ -34,7 +34,11 @@ function Team() {
                 <Card.Footer>
                   <div>
                     {d.links.map((l) => (
-                      <a href={l.link}>
+                      <a
+                        href={l.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img src={l.icon} style={{ width: 30 }} />
                       </a>
                     ))}
@@ -70,7 +74,11 @@ function Team() {
                 <Card.Footer>
                   <div>
                     {d.links.map((l) => (
-                      <a href={l.link}>
+                      <a
+                        href={l.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img src={l.icon} style={{ width: 30 }} />
                       </a>
                     ))}

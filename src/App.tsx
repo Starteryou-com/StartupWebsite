@@ -1,5 +1,4 @@
 import "./App.css";
-import About from "./components/About";
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import Navibar from "./components/Navibar";
@@ -15,7 +14,6 @@ function App() {
       <Navibar />
       <Banner />
       <Features />
-      <About />
       <Mission />
       <Vision />
       <Team />

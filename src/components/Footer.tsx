@@ -36,13 +36,49 @@ function Footer() {
               <Col>
                 <ul style={{ listStyle: "none" }}>
                   <li>
-                    <a>Facebook</a>
+                    <a
+                      href="https://www.facebook.com/people/Starter-You/pfbid0cDVAWPa4hqRpbPhD5QzCgc5U36K1pLYkPWYRdwc4iAL9A1ahspYw1bYdbFxmLq4Wl/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Facebook
+                    </a>
                   </li>
                   <li>
-                    <a>Instagram</a>
+                    <a
+                      href="https://www.instagram.com/starteryou_official/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Instagram
+                    </a>
                   </li>
                   <li>
-                    <a>Linkedin</a>
+                    <a
+                      href="https://www.linkedin.com/company/starteryou/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Linkedin
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@Starteryou"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Youtube Channel
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tiktok.com/@starteryou_official"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      TikTok
+                    </a>
                   </li>
                   <li>
                     <a>X</a>
