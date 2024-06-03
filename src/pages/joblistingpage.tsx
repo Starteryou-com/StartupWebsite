@@ -1,13 +1,13 @@
 import Navibar from "../components/Navibar";
 import { Container } from "react-bootstrap";
 import "../App.css";
-function Homepage() {
+function Joblistingpage() {
   return (
-    <Container id="Homepage">
+    <Container id="Joblistingpage">
       <Navibar />
-      <h1>This is homepage</h1>
+      <h1>This is Job listing page</h1>
     </Container>
   );
 }
 
-export default Homepage;
+export default Joblistingpage;

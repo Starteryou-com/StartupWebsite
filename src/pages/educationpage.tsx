@@ -1,13 +1,13 @@
 import Navibar from "../components/Navibar";
 import { Container } from "react-bootstrap";
 import "../App.css";
-function Homepage() {
+function Educationpage() {
   return (
-    <Container id="Homepage">
+    <Container id="Educationpage">
       <Navibar />
-      <h1>This is homepage</h1>
+      <h1>This is Education page.</h1>
     </Container>
   );
 }
 
-export default Homepage;
+export default Educationpage;

@@ -2,15 +2,25 @@ import Aboutuspage from "./pages/aboutuspage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Homepage from "./pages/homepage";
+import Joblistingpage from "./pages/joblistingpage";
+import Educationpage from "./pages/educationpage";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Homepage />,
+  },
+  {
+    path: "Aboutuspage",
     element: <Aboutuspage />,
   },
   {
-    path: "/",
-    element: <Homepage />,
+    path: "Joblistingpage",
+    element: <Joblistingpage />,
+  },
+  {
+    path: "Educationpage",
+    element: <Educationpage />,
   },
 ]);
 
