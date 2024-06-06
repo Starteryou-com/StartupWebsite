@@ -1,47 +1,37 @@
 import Navibar from "../components/Navibar";
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import "../App.css";
-import Text from "../components/Text";
-import Description from "../components/description";
-import React from 'react';
-import Filter from "../components/Filter";
-import Tiles from "../components/Tiles";
-import Tile2 from "../components/Tile2";
-import Tile3 from "../components/Tile3";
-import Image from "../components/Image";
-import Faq from "../components/Faq";
-import FaqText from "../components/FaqText";
 import Footer from "../components/Footer";
-import Titlejob from "../components/Titlejob";
-import Titleedu from "../components/Titleedu";
-import Edudescription from "../components/Edudescription";
+import Courses from "../components/Courses";
 
-const styles = {
-  Educationpage: {
-    backgroundColor: '#ededed',
-  },
-};
-
-const Educationpage = (props) => {
+function Educationpage() {
   return (
-    <Container id="Educationpages">  
-    <div style={styles.Educationpage}>
-    {props.children}
-  </div>
-  <Navibar />
-  <Text />
-  <Description />
-  <Filter />
-  <Tiles/>
-  <Image />
-  <Titleedu />
-  <Edudescription />
-  <Faq />
-  <FaqText />
-  <Footer />
-  </Container>
-  
+    <Container className="Educationpage">
+      <Navibar />
+      <div>
+        <h1>Education</h1>
+        <a>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure
+        </a>
+        <br />
+        <Button className="float-end mb-1 mt-3" variant="dark">
+          Filters
+        </Button>
+        <Courses />
+        <h2 className="mt-3">FAQ'S</h2>
+        <a>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure
+        </a>
+        <Footer />
+      </div>
+    </Container>
   );
-};
+}
 
 export default Educationpage;
