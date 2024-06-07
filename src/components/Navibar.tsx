@@ -1,10 +1,10 @@
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 function Navibar() {
   return (
     <div>
-      <Navbar expand="lg" className=" shadow-5-strong navibar">
+      <Navbar expand="lg" className=" shadow-5-strong navibar" fixed="top">
         <Container>
           <Navbar.Brand href="#home" className="nav-starteryou">
             Starteryou
@@ -24,6 +24,18 @@ function Navibar() {
               <NavLink to="/Aboutuspage" className="nav-everything">
                 about us
               </NavLink>
+            </Nav>
+            <Nav>
+              <Nav.Link>
+                <Button variant="primary" className="btn btn-sm">
+                  Login
+                </Button>
+              </Nav.Link>
+              <Nav.Link>
+                <Button className="btn btn-sm" variant="outline-secondary">
+                  signup
+                </Button>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

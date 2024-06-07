@@ -1,24 +1,14 @@
 import Navibar from "../components/Navibar";
 import { Container } from "react-bootstrap";
 import "../App.css";
-import Search from "../components/Search";
-import Filter from "../components/Filter";
-import Jobbox from "../components/Jobbox";
-import Imagejob from "../components/Imagejob";
-import Titlejob from "../components/Titlejob";
-import Jobdescription from "../components/Jobdescription";
+import Jobtab from "../components/Jobtab";
 import Footer from "../components/Footer";
 function Joblistingpage() {
   return (
-    <Container id="Joblistingpage">
+    <Container className="Joblistingpage mt-5 pt-5">
       <Navibar />
       <h1>This is Job listing page</h1>
-      <Search />
-      <Filter />
-      <Jobbox />
-      <Imagejob />
-      <Titlejob />
-      <Jobdescription />
+      <Jobtab />
       <Footer />
     </Container>
   );

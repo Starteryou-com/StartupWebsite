@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
