@@ -1,5 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import {Col, Container, Row} from "react-bootstrap";
 
 function Footer() {
   return (
@@ -13,7 +12,7 @@ function Footer() {
           <Col xs={6} md={9}>
             <Row>
               <Col>
-                <ul style={{ listStyle: "none" }}>
+                <ul style={{listStyle: "none"}}>
                   <li>
                     <a href="#home">Home</a>
                   </li>
@@ -35,7 +34,7 @@ function Footer() {
                 </ul>
               </Col>
               <Col>
-                <ul style={{ listStyle: "none" }}>
+                <ul style={{listStyle: "none"}}>
                   <li>
                     <a
                       href="https://www.facebook.com/people/Starter-You/pfbid0cDVAWPa4hqRpbPhD5QzCgc5U36K1pLYkPWYRdwc4iAL9A1ahspYw1bYdbFxmLq4Wl/"
@@ -87,7 +86,7 @@ function Footer() {
                 </ul>
               </Col>
               <Col>
-                <ul style={{ listStyle: "none" }}>
+                <ul style={{listStyle: "none"}}>
                   <li>
                     <a>Privacy Policy</a>
                   </li>
