@@ -1,5 +1,5 @@
 import Navibar from "../components/Navibar";
-import { Button, Col, Container, Form, Nav, Row } from "react-bootstrap";
+import {Button, Col, Container, Form, Row} from "react-bootstrap";
 import "../App.css";
 import Footer from "../components/Footer";
 import Courses from "../components/Courses";

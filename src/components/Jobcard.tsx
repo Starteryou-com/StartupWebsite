@@ -1,5 +1,3 @@
-import React from "react";
-
 const defaultProps = {
   image:
     "https://images.unsplash.com/photo-1549180030-48bf079fb38a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyfHxzeWRuZXl8ZW58MXx8fHwxNjY5ODk4NTU4&ixlib=rb-4.0.3&q=80&w=1080",
@@ -128,9 +126,20 @@ const ApplyButton = (props) => {
     </a>
   );
 };
-
+type JobcardProps = {
+  image: string;
+  title: string;
+  description: string;
+  applyLink: string;
+};
 // Main Jobcard Component
-const Jobcard = ({image, title, description, applyLink}) => {
+const Jobcard: React.FC<JobcardProps> = ({
+  image,
+  title,
+  description,
+  applyLink,
+}) => {
+  // Your component code here
   return (
     <Card>
       <Image image={image} />
