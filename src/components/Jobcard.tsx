@@ -4,7 +4,8 @@ import React from "react";
 const defaultProps = {
   image:
     "https://images.unsplash.com/photo-1549180030-48bf079fb38a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyfHxzeWRuZXl8ZW58MXx8fHwxNjY5ODk4NTU4&ixlib=rb-4.0.3&q=80&w=1080",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id odio maximus, congue felis sed, viverra mauris. Praesent luctus cursus risus porttitor bibendum. Proin ac ante ac lorem rutrum lacinia. Phasellus semper diam eget congue facilisis.",
   title: "Title goes here",
 };
 
@@ -26,7 +27,7 @@ const cardStyles = {
 };
 
 // Card Component
-const Card: React.FC = ({children}) => {
+const Card: React.FC = ({ children }) => {
   return <div style={cardStyles.Card}>{children}</div>;
 };
 
@@ -41,7 +42,7 @@ const imageStyles = {
 };
 
 // Image Component
-const Image: React.FC<{image?: string}> = ({image}) => {
+const Image: React.FC<{ image?: string }> = ({ image }) => {
   return (
     <img
       src={image ?? defaultProps.image}
@@ -65,7 +66,7 @@ const titleTextStyles = {
 };
 
 // Title Text Component
-const TitleText: React.FC<{title?: string}> = ({title}) => {
+const TitleText: React.FC<{ title?: string }> = ({ title }) => {
   return <div style={titleTextStyles.Title}>{title ?? defaultProps.title}</div>;
 };
 
@@ -82,7 +83,7 @@ const descTextStyles = {
 };
 
 // Description Text Component
-const DescriptionText: React.FC<{description?: string}> = ({description}) => {
+const DescriptionText: React.FC<{ description?: string }> = ({ description }) => {
   return (
     <div style={descTextStyles.Description}>
       {description ?? defaultProps.description}
@@ -112,7 +113,7 @@ const buttonStyles = {
 };
 
 // Apply Button Component
-const ApplyButton: React.FC<{applyLink: string}> = ({applyLink}) => {
+const ApplyButton: React.FC<{ applyLink: string }> = ({ applyLink }) => {
   return (
     <a
       href={applyLink}
@@ -142,7 +143,7 @@ const Jobcard: React.FC<JobcardProps> = ({
   return (
     <Card>
       <Image image={image} />
-      <div style={{flex: 1}}>
+      <div style={{ flex: 1 }}>
         <TitleText title={title} />
         <DescriptionText description={description} />
         <ApplyButton applyLink={applyLink} />
