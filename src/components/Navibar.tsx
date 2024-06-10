@@ -25,7 +25,7 @@ function Navibar() {
                 about us
               </NavLink>
             </Nav>
-            <Nav>
+            <Nav className="loginbuttons">
               <Nav.Link>
                 <Button variant="primary" className="btn btn-sm">
                   Login

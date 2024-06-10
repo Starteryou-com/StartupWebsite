@@ -24,6 +24,10 @@
   text-decoration: none;
 }
 
+.loginbuttons a {
+  margin-left: 0px;
+}
+
 /*------Banner component--------*/
 
 .banner {
