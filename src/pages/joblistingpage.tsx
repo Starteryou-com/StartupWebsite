@@ -1,7 +1,6 @@
 import Navibar from "../components/Navibar";
 import {Container} from "react-bootstrap";
 import "../App.css";
-import Jobtab from "../components/Jobtab";
 import Footer from "../components/Footer";
 import Jobcard from "../components/Jobcard";
 function Joblistingpage() {

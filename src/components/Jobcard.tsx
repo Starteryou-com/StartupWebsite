@@ -126,8 +126,20 @@ const ApplyButton = (props) => {
     </a>
   );
 };
-
+type JobcardProps = {
+  image: string;
+  title: string;
+  description: string;
+  applyLink: string;
+};
 // Main Jobcard Component
+const Jobcard: React.FC<JobcardProps> = ({
+  image,
+  title,
+  description,
+  applyLink,
+}) => {
+  // Your component code here
 const Jobcard = ({ image, title, description, applyLink }) => {
   return (
     <Card>
