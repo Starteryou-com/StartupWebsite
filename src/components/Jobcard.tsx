@@ -140,11 +140,10 @@ const Jobcard: React.FC<JobcardProps> = ({
   applyLink,
 }) => {
   // Your component code here
-const Jobcard = ({ image, title, description, applyLink }) => {
   return (
     <Card>
       <Image image={image} />
-      <div style={{ flex: 1 }}>
+      <div style={{flex: 1}}>
         <TitleText title={title} />
         <DescriptionText description={description} />
         <ApplyButton applyLink={applyLink} />
@@ -154,3 +153,4 @@ const Jobcard = ({ image, title, description, applyLink }) => {
 };
 
 export default Jobcard;
+
