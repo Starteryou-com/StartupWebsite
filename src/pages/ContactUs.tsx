@@ -1,5 +1,4 @@
-// src/ContactUs.js
-import useState from "react";
+import React, {useState} from "react";
 import {Container, Row, Col, Form, Button, Card} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -11,7 +10,9 @@ const ContactUs = () => {
     description: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const {name, value} = e.target;
     setFormData({
       ...formData,
@@ -19,7 +20,7 @@ const ContactUs = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission, e.g., send data to a server
     console.log("Form data submitted:", formData);

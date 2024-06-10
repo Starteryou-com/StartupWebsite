@@ -1,5 +1,3 @@
-import React from "react";
-
 const styles = {
   Header: {
     top: "0px",

@@ -1,9 +1,11 @@
+import React from "react";
+
+// Default props
 const defaultProps = {
   image:
     "https://images.unsplash.com/photo-1549180030-48bf079fb38a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyfHxzeWRuZXl8ZW58MXx8fHwxNjY5ODk4NTU4&ixlib=rb-4.0.3&q=80&w=1080",
-  descriptiontext:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id odio maximus, congue felis sed, viverra mauris. Praesent luctus cursus risus porttitor bibendum. Proin ac ante ac lorem rutrum lacinia. Phasellus semper diam eget congue facilisis.",
-  titletext: "Title goes here",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  title: "Title goes here",
 };
 
 // Styles for Card Component
@@ -20,12 +22,12 @@ const cardStyles = {
     padding: "20px",
     margin: "20px auto",
     boxSizing: "border-box",
-  },
+  } as React.CSSProperties,
 };
 
 // Card Component
-const Card = (props) => {
-  return <div style={cardStyles.Card}>{props.children}</div>;
+const Card: React.FC = ({children}) => {
+  return <div style={cardStyles.Card}>{children}</div>;
 };
 
 // Styles for Image Component
@@ -35,14 +37,14 @@ const imageStyles = {
     height: "120px",
     borderRadius: "12px",
     marginRight: "20px",
-  },
+  } as React.CSSProperties,
 };
 
 // Image Component
-const Image = (props) => {
+const Image: React.FC<{image?: string}> = ({image}) => {
   return (
     <img
-      src={props.image ?? defaultProps.image}
+      src={image ?? defaultProps.image}
       alt="Job"
       style={imageStyles.Image}
     />
@@ -59,16 +61,12 @@ const titleTextStyles = {
     lineHeight: "1.2",
     marginBottom: "10px",
     textAlign: "left",
-  },
+  } as React.CSSProperties,
 };
 
 // Title Text Component
-const TitleText = (props) => {
-  return (
-    <div style={titleTextStyles.Title}>
-      {props.title ?? defaultProps.titletext}
-    </div>
-  );
+const TitleText: React.FC<{title?: string}> = ({title}) => {
+  return <div style={titleTextStyles.Title}>{title ?? defaultProps.title}</div>;
 };
 
 // Styles for Description Text Component
@@ -80,14 +78,14 @@ const descTextStyles = {
     lineHeight: "1.5",
     marginBottom: "10px",
     textAlign: "left",
-  },
+  } as React.CSSProperties,
 };
 
 // Description Text Component
-const DescriptionText = (props) => {
+const DescriptionText: React.FC<{description?: string}> = ({description}) => {
   return (
     <div style={descTextStyles.Description}>
-      {props.description ?? defaultProps.descriptiontext}
+      {description ?? defaultProps.description}
     </div>
   );
 };
@@ -110,14 +108,14 @@ const buttonStyles = {
     lineHeight: "40px",
     textDecoration: "none",
     transition: "background-color 0.3s",
-  },
+  } as React.CSSProperties,
 };
 
 // Apply Button Component
-const ApplyButton = (props) => {
+const ApplyButton: React.FC<{applyLink: string}> = ({applyLink}) => {
   return (
     <a
-      href={props.applyLink}
+      href={applyLink}
       target="_blank"
       rel="noopener noreferrer"
       style={buttonStyles.Button}
@@ -126,12 +124,14 @@ const ApplyButton = (props) => {
     </a>
   );
 };
+
 type JobcardProps = {
-  image: string;
-  title: string;
-  description: string;
+  image?: string;
+  title?: string;
+  description?: string;
   applyLink: string;
 };
+
 // Main Jobcard Component
 const Jobcard: React.FC<JobcardProps> = ({
   image,
@@ -139,7 +139,6 @@ const Jobcard: React.FC<JobcardProps> = ({
   description,
   applyLink,
 }) => {
-  // Your component code here
   return (
     <Card>
       <Image image={image} />
