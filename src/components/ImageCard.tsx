@@ -1,6 +1,72 @@
-import React from "react";
+interface CardStyle {
+  margin: string;
+  padding: string;
+  backgroundColor: string;
+  borderRadius: string;
+  boxShadow: string;
+  display: string;
+  flexDirection: string;
+  alignItems: string;
+  maxWidth: string;
+  width: string;
+  boxSizing: string;
+}
 
-const styles = {
+interface ImageContainerStyle {
+  position: string;
+  width: string;
+  height: string;
+  borderRadius: string;
+  backgroundPosition: string;
+  backgroundSize: string;
+  backgroundRepeat: string;
+  marginBottom: string;
+  display: string;
+  justifyContent: string;
+  alignItems: string;
+}
+
+interface TextStyle {
+  color: string;
+  fontSize: string;
+  fontFamily: string;
+  fontWeight: number | string;
+  lineHeight: string;
+  textAlign?: string;
+  marginBottom?: string;
+}
+
+interface ButtonStyle {
+  cursor: string;
+  display: string;
+  justifyContent: string;
+  alignItems: string;
+  width: string;
+  height: string;
+  border: string;
+  boxSizing: string;
+  borderRadius: string;
+  color: string;
+  backgroundColor: string;
+  outline: string;
+}
+
+interface IconStyle {
+  color: string;
+  fill: string;
+  width: string;
+  height: string;
+  fontSize: string;
+}
+
+const styles: {
+  card: CardStyle;
+  imageContainer: ImageContainerStyle;
+  title: TextStyle;
+  description: TextStyle;
+  button: ButtonStyle;
+  icon: IconStyle;
+} = {
   card: {
     margin: "20px",
     padding: "20px",
@@ -42,6 +108,7 @@ const styles = {
     lineHeight: "18px",
     textAlign: "justify",
     marginBottom: "20px",
+    fontWeight: "10",
   },
   button: {
     cursor: "pointer",
@@ -65,45 +132,4 @@ const styles = {
     fontSize: "14px",
   },
 };
-
-const defaultProps = {
-  image:
-    "https://images.unsplash.com/photo-1581985430116-d8fba25256b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyOHx8cGlua3xlbnwxfHx8fDE2NzAyNTEwMTE&ixlib=rb-4.0.3&q=80&w=1080",
-  title: "Title goes here",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec arcu molestie, mollis purus sit amet, sodales libero. Nulla id odio maximus, congue.",
-  IconComponent: () => (
-    <svg style={styles.icon} viewBox="0 0 256 512">
-      <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
-    </svg>
-  ),
-};
-
-const ImageCard = (props) => {
-  const {image, title, description, IconComponent} = props;
-  const iconComponent = IconComponent ?? defaultProps.IconComponent;
-
-  return (
-    <div style={styles.card}>
-      <div
-        style={{
-          ...styles.imageContainer,
-          backgroundImage: `url(${image ?? defaultProps.image})`,
-        }}
-      >
-        <button style={styles.button}>
-          {iconComponent({style: styles.icon})}
-        </button>
-        <button style={styles.button}>
-          {iconComponent({style: styles.icon})}
-        </button>
-      </div>
-      <div style={styles.title}>{title ?? defaultProps.title}</div>
-      <div style={styles.description}>
-        {description ?? defaultProps.description}
-      </div>
-    </div>
-  );
-};
-
-export default ImageCard;
+export default styles;
