@@ -1,24 +1,33 @@
+import Aboutuspage from "./pages/aboutuspage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import Banner from "./components/Banner";
-import Contact from "./components/Contact";
-import Navibar from "./components/Navibar";
-import Vision from "./components/Vision";
-import Team from "./components/Team";
-import Features from "./components/Features";
-import Mission from "./components/Mission";
-import Footer from "./components/Footer";
+import Homepage from "./pages/homepage";
+import Joblistingpage from "./pages/joblistingpage";
+import Educationpage from "./pages/educationpage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Homepage />,
+  },
+  {
+    path: "Aboutuspage",
+    element: <Aboutuspage />,
+  },
+  {
+    path: "Joblistingpage",
+    element: <Joblistingpage />,
+  },
+  {
+    path: "Educationpage",
+    element: <Educationpage />,
+  },
+]);
 
 function App() {
   return (
     <div className="App">
-      <Navibar />
-      <Banner />
-      <Features />
-      <Mission />
-      <Vision />
-      <Team />
-      <Contact />
-      <Footer />
+      <RouterProvider router={router} />
     </div>
   );
 }

@@ -1,21 +1,41 @@
-import { Container, NavLink, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function Navibar() {
   return (
     <div>
-      <Navbar expand="lg" className=" shadow-5-strong navibar" >
+      <Navbar expand="lg" className=" shadow-5-strong navibar" fixed="top">
         <Container>
-          <Navbar.Brand href="#home" className="nav-starteryou">Starteryou</Navbar.Brand>
+          <Navbar.Brand href="#home" className="nav-starteryou">
+            Starteryou
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavLink href="#home" className="nav-everything">Home</NavLink>
-              <NavLink href="#features" className="nav-everything">Features</NavLink>
-              <NavLink href="#aboutUs" className="nav-everything">About Us</NavLink>
-              <NavLink href="#mission" className="nav-everything">Our Mission</NavLink>
-              <NavLink href="#vision" className="nav-everything">Our Vision</NavLink>
-              <NavLink href="#team" className="nav-everything">Our Team</NavLink>
-              <NavLink href="#contact" className="nav-everything">Contact us</NavLink>
+              <NavLink to="/" className="nav-everything">
+                Home
+              </NavLink>
+              <NavLink to="/Joblistingpage" className="nav-everything">
+                Jobs
+              </NavLink>
+              <NavLink to="/Educationpage" className="nav-everything">
+                Education
+              </NavLink>
+              <NavLink to="/Aboutuspage" className="nav-everything">
+                about us
+              </NavLink>
+            </Nav>
+            <Nav className="loginbuttons">
+              <Nav.Link>
+                <Button variant="primary" className="btn btn-sm">
+                  Login
+                </Button>
+              </Nav.Link>
+              <Nav.Link>
+                <Button className="btn btn-sm" variant="outline-secondary">
+                  signup
+                </Button>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
