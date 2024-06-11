@@ -27,7 +27,7 @@ const cardStyles = {
 };
 
 // Card Component
-const Card: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const Card: React.FC<{children: React.ReactNode}> = ({children}) => {
   return <div style={cardStyles.Card}>{children}</div>;
 };
 
