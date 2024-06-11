@@ -8,7 +8,7 @@ function Joblistingpage() {
     <Container className="Joblistingpage mt-5 pt-5">
       <Navibar />
       <h1>This is Job listing page</h1>
-      <Jobcard />
+      <Jobcard applyLink="your-apply-link-goes-here" />
       <Footer />
     </Container>
   );
