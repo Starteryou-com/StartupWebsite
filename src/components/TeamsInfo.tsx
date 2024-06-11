@@ -40,7 +40,7 @@ export const primeMembers = [
     path: antonyimg,
     about: (
       <p>
-        <strong>CFO</strong> | Experienced Young Entrepreneur
+        <strong>CSO</strong> | Experienced Young Entrepreneur
       </p>
     ),
     links: [

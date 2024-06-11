@@ -1,10 +1,9 @@
 import Aboutuspage from "./pages/aboutuspage";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import "./App.css";
 import Homepage from "./pages/homepage";
-import Joblistingpage from "./pages/Joblistingpage";
 import Educationpage from "./pages/educationpage";
-
+import Joblistingpage from "./pages/joblistingpage";
 const router = createBrowserRouter([
   {
     path: "/",
