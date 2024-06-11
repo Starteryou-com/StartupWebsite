@@ -1,12 +1,12 @@
 import "../App.css";
 import Banner from "../components/Banner";
-import Contact from "../components/Contact";
 import Navibar from "../components/Navibar";
 import Vision from "../components/Vision";
 import Team from "../components/Team";
 import Features from "../components/Features";
 import Mission from "../components/Mission";
 import Footer from "../components/Footer";
+import ContactUs from "./ContactUs";
 
 function Aboutuspage() {
   return (
@@ -17,7 +17,7 @@ function Aboutuspage() {
       <Mission />
       <Vision />
       <Team />
-      <Contact />
+      <ContactUs />
       <Footer />
     </div>
   );
