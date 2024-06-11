@@ -27,7 +27,7 @@ const cardStyles = {
 };
 
 // Card Component
-const Card: React.FC = ({ children }) => {
+const Card: React.FC<{children: React.ReactNode}> = ({children}) => {
   return <div style={cardStyles.Card}>{children}</div>;
 };
 
@@ -42,7 +42,7 @@ const imageStyles = {
 };
 
 // Image Component
-const Image: React.FC<{ image?: string }> = ({ image }) => {
+const Image: React.FC<{image?: string}> = ({image}) => {
   return (
     <img
       src={image ?? defaultProps.image}
@@ -66,7 +66,7 @@ const titleTextStyles = {
 };
 
 // Title Text Component
-const TitleText: React.FC<{ title?: string }> = ({ title }) => {
+const TitleText: React.FC<{title?: string}> = ({title}) => {
   return <div style={titleTextStyles.Title}>{title ?? defaultProps.title}</div>;
 };
 
@@ -83,7 +83,7 @@ const descTextStyles = {
 };
 
 // Description Text Component
-const DescriptionText: React.FC<{ description?: string }> = ({ description }) => {
+const DescriptionText: React.FC<{description?: string}> = ({description}) => {
   return (
     <div style={descTextStyles.Description}>
       {description ?? defaultProps.description}
@@ -113,7 +113,7 @@ const buttonStyles = {
 };
 
 // Apply Button Component
-const ApplyButton: React.FC<{ applyLink: string }> = ({ applyLink }) => {
+const ApplyButton: React.FC<{applyLink: string}> = ({applyLink}) => {
   return (
     <a
       href={applyLink}
@@ -143,7 +143,7 @@ const Jobcard: React.FC<JobcardProps> = ({
   return (
     <Card>
       <Image image={image} />
-      <div style={{ flex: 1 }}>
+      <div style={{flex: 1}}>
         <TitleText title={title} />
         <DescriptionText description={description} />
         <ApplyButton applyLink={applyLink} />
