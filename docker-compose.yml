@@ -1,0 +1,34 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:80"
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./my_fastapi_project/backend
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    environment:
+      - MONGODB_URI=mongodb+srv://nikshepkulli9:mongodb123@cluster0.arvbdw4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+  mongodb:
+    image: mongo:4.4
+    networks:
+      - app-network
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      - MONGODB_URI=mongodb+srv://nikshepkulli9:mongodb123@cluster0.arvbdw4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongo-data:
