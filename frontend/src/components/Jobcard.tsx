@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import CrudDropdown from "./CrudDropdown";
 
 // Default props
 const defaultProps = {
@@ -12,6 +13,7 @@ const defaultProps = {
 // Styles for Card Component
 const cardStyles = {
   Card: {
+    position: "relative",
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
@@ -92,34 +94,45 @@ const DescriptionText: React.FC<{description?: string}> = ({description}) => {
 };
 
 // Styles for Apply Button Component
-const buttonStyles = {
+const applyButtonStyles = {
   Button: {
-    cursor: "pointer",
-    width: "150px",
-    height: "45px",
-    backgroundColor: "#007bff",
-    color: "#ffffff",
-    fontSize: "14px",
+    display: "inline-block",
+    padding: "12px 24px",
+    fontSize: "16px",
     fontFamily: "Arial, sans-serif",
-    fontWeight: 600,
+    fontWeight: "bold",
+    color: "#fff",
+    backgroundColor: "#007bff",
     border: "none",
-    borderRadius: "8px",
-    outline: "none",
-    textAlign: "center",
-    lineHeight: "40px",
+    borderRadius: "6px",
     textDecoration: "none",
-    transition: "background-color 0.3s",
+    textAlign: "center",
+    transition: "background-color 0.3s, transform 0.3s",
+  } as React.CSSProperties,
+  ButtonHover: {
+    backgroundColor: "#0056b3",
+    transform: "scale(1.05)",
   } as React.CSSProperties,
 };
 
-// Apply Button Component
-const ApplyButton: React.FC<{applyLink: string}> = ({applyLink}) => {
+type ApplyButtonProps = {
+  applyLink: string;
+};
+
+const ApplyButton: React.FC<ApplyButtonProps> = ({applyLink}) => {
+  const [hover, setHover] = useState(false);
+
   return (
     <a
       href={applyLink}
       target="_blank"
       rel="noopener noreferrer"
-      style={buttonStyles.Button}
+      style={{
+        ...applyButtonStyles.Button,
+        ...(hover ? applyButtonStyles.ButtonHover : {}),
+      }}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
     >
       Apply Now
     </a>
@@ -140,14 +153,49 @@ const Jobcard: React.FC<JobcardProps> = ({
   description,
   applyLink,
 }) => {
+  const [jobTitle, setJobTitle] = useState(title ?? defaultProps.title);
+  const [jobDescription, setJobDescription] = useState(
+    description ?? defaultProps.description
+  );
+  const [jobImage, setJobImage] = useState(image ?? defaultProps.image);
+
+  const handleAddJob = () => {
+    // Logic to add job
+    alert("Add Job");
+  };
+
+  const handleEditJob = () => {
+    // Logic to edit job
+    const newTitle = prompt("Enter new job title:", jobTitle);
+    if (newTitle) setJobTitle(newTitle);
+
+    const newDescription = prompt("Enter new job description:", jobDescription);
+    if (newDescription) setJobDescription(newDescription);
+
+    const newImage = prompt("Enter new job image URL:", jobImage);
+    if (newImage) setJobImage(newImage);
+  };
+
+  const handleDeleteJob = () => {
+    // Logic to delete job
+    alert("Delete Job");
+  };
+
   return (
     <Card>
-      <Image image={image} />
-      <div style={{flex: 1}}>
-        <TitleText title={title} />
-        <DescriptionText description={description} />
-        <ApplyButton applyLink={applyLink} />
+      <div style={{display: "flex", alignItems: "flex-start", width: "100%"}}>
+        <Image image={jobImage} />
+        <div style={{flex: 1}}>
+          <TitleText title={jobTitle} />
+          <DescriptionText description={jobDescription} />
+          <ApplyButton applyLink={applyLink} />
+        </div>
       </div>
+      <CrudDropdown
+        onAdd={handleAddJob}
+        onEdit={handleEditJob}
+        onDelete={handleDeleteJob}
+      />
     </Card>
   );
 };
