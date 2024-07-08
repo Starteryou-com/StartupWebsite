@@ -1,3 +1,4 @@
+from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
 from fastapi import FastAPI, HTTPException
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -225,3 +226,43 @@ async def delete_data(object_id: str):
     except Exception as e:
         logging.error(f"Error deleting data: {e}")
         raise HTTPException(status_code=500, detail="Error deleting data")
+
+# Login&Signin
+
+
+class User(BaseModel):
+    email: str
+    password: str
+    name: str = None
+
+
+client = AsyncIOMotorClient(
+    'mongodb+srv://bpscrohit:Mongo123@cluster0.rszwkl0.mongodb.net/')
+db = client.login_system
+
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+
+@app.post("/api/signup/{user_type}")
+async def signup(user_type: str, user: User):
+    collection = db[user_type]
+    if await collection.find_one({"email": user.email}):
+        raise HTTPException(status_code=400, detail="Email already registered")
+
+    user.password = pwd_context.hash(user.password)
+    await collection.insert_one(user.dict())
+    return {"message": "User created successfully"}
+
+
+@app.post("/api/login/{user_type}")
+async def login(user_type: str, user: User):
+    collection = db[user_type]
+    db_user = await collection.find_one({"email": user.email})
+    if not db_user or not pwd_context.verify(user.password, db_user['password']):
+        raise HTTPException(status_code=400, detail="Invalid credentials")
+
+    return {"message": "Login successful"}
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
