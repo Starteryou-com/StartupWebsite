@@ -37,7 +37,7 @@ class PyObjectId(ObjectId):
         field_schema.update(type="string")
 
 
-MONGODB_URI = os.getenv("MONGODB_URI")
+MONGODB_URI = os.getenv("mongodb+srv://RohithAndanala:Rohith357@portfolio.crlthkf.mongodb.net/?retryWrites=true&w=majority&appName=Portfolio")
 
 
 @app.on_event("startup")

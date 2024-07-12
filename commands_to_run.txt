@@ -1,0 +1,3 @@
+docker system prune -a 
+docker-compose build <specify if needed (frontend, backend)>
+docker-compose up <specify if needed (frontend, backend)>
