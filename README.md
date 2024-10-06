@@ -1,3 +1,11 @@
+
+# Repository Archived
+
+This repository has been archived as we are no longer proceeding with the current design. The project is being revamped, and the latest version can be found at the following link:
+
+[RevampUI Repository](https://github.com/connectleadme/RevampUI.git)
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
